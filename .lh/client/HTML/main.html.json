@@ -1,0 +1,26 @@
+{
+    "sourceFile": "client/HTML/main.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1672772968108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1672773142185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,15 @@\n <head>\n   <title>first_project_meteor</title>\n+  <meta name=\"keywords\" content=\"\">\n+\t<meta name=\"description\" content=\"\">\n+\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0,\n+\tuser-scalable=no\">\n+\n+\t<link href='http://fonts.googleapis.com/css?family=Montserrat:100,300,400,700' rel='stylesheet'\n+\ttype='text/css'>\n+\t<link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700\"\n+\trel=\"stylesheet\">\n </head>\n \n <body>\n   {{> sidebar}}\n"
+                },
+                {
+                    "date": 1672773446842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,7 @@\n \trel=\"stylesheet\">\n </head>\n \n <body>\n-  {{> sidebar}}\n+  \n   <div id=\"react-target\"></div>\n </body>\n"
+                }
+            ],
+            "date": 1672772968108,
+            "name": "Commit-0",
+            "content": "<head>\n  <title>first_project_meteor</title>\n</head>\n\n<body>\n  {{> sidebar}}\n  <div id=\"react-target\"></div>\n</body>\n"
+        }
+    ]
+}

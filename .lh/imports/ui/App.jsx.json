@@ -1,0 +1,54 @@
+{
+    "sourceFile": "imports/ui/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1672772323154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1672772599735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import React from 'react';\n import { Hello } from './Hello.jsx';\n import { Info } from './Info.jsx';\n+import { Sidebar } from './Sidebar.jsx';\n \n export const App = () => (\n   <div>\n     <Sidebar/>\n"
+                },
+                {
+                    "date": 1672772615951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { Sidebar } from './Sidebar.jsx';\n \n export const App = () => (\n   <div>\n-    <Sidebar/>\n+    \n     <h1>Welcome to Meteor!</h1>\n     <Hello/>\n     <Info/>\n   </div>\n"
+                },
+                {
+                    "date": 1672772659895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { Sidebar } from './Sidebar.jsx';\n \n export const App = () => (\n   <div>\n-    \n+    <Sidebar/>\n     <h1>Welcome to Meteor!</h1>\n     <Hello/>\n     <Info/>\n   </div>\n"
+                },
+                {
+                    "date": 1672778682956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { Info } from './Info.jsx';\n import { Sidebar } from './Sidebar.jsx';\n \n export const App = () => (\n-  <div>\n+  <div class=\"main-content\">\n     <Sidebar/>\n     <h1>Welcome to Meteor!</h1>\n     <Hello/>\n     <Info/>\n"
+                },
+                {
+                    "date": 1672778709231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,11 @@\n import { Info } from './Info.jsx';\n import { Sidebar } from './Sidebar.jsx';\n \n export const App = () => (\n+  <Sidebar/>\n   <div class=\"main-content\">\n-    <Sidebar/>\n+    \n     <h1>Welcome to Meteor!</h1>\n     <Hello/>\n     <Info/>\n   </div>\n"
+                },
+                {
+                    "date": 1672778725497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,10 @@\n import { Info } from './Info.jsx';\n import { Sidebar } from './Sidebar.jsx';\n \n export const App = () => (\n-  <Sidebar/>\n   <div class=\"main-content\">\n-    \n+    <Sidebar/>\n     <h1>Welcome to Meteor!</h1>\n     <Hello/>\n     <Info/>\n   </div>\n"
+                },
+                {
+                    "date": 1672779196581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,14 @@\n import { Info } from './Info.jsx';\n import { Sidebar } from './Sidebar.jsx';\n \n export const App = () => (\n-  <div class=\"main-content\">\n+  <div>\n     <Sidebar/>\n-    <h1>Welcome to Meteor!</h1>\n-    <Hello/>\n-    <Info/>\n+    <div class=\"main-content\">\n+      <h1>Welcome to Meteor!</h1>\n+      <Hello/>\n+      <Info/>\n+    </div>\n+    \n   </div>\n );\n"
+                },
+                {
+                    "date": 1672779664868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,10 @@\n export const App = () => (\n   <div>\n     <Sidebar/>\n     <div class=\"main-content\">\n-      <h1>Welcome to Meteor!</h1>\n-      <Hello/>\n-      <Info/>\n+      \n+     \n     </div>\n     \n   </div>\n );\n"
+                },
+                {
+                    "date": 1672780350306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,18 @@\n import React from 'react';\n import { Hello } from './Hello.jsx';\n+import { Home } from './Home.jsx';\n import { Info } from './Info.jsx';\n import { Sidebar } from './Sidebar.jsx';\n \n export const App = () => (\n   <div>\n     <Sidebar/>\n+    \n     <div class=\"main-content\">\n-      \n-     \n+\n+      <Home/> \n+\n     </div>\n     \n   </div>\n );\n"
+                }
+            ],
+            "date": 1672772323154,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport { Hello } from './Hello.jsx';\nimport { Info } from './Info.jsx';\n\nexport const App = () => (\n  <div>\n    <Sidebar/>\n    <h1>Welcome to Meteor!</h1>\n    <Hello/>\n    <Info/>\n  </div>\n);\n"
+        }
+    ]
+}

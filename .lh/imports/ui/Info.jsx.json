@@ -1,0 +1,18 @@
+{
+    "sourceFile": "imports/ui/Info.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1672772701469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1672772701469,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport { useTracker } from 'meteor/react-meteor-data';\nimport { LinksCollection } from '../api/links';\n\nexport const Info = () => {\n  const links = useTracker(() => {\n    return LinksCollection.find().fetch();\n  });\n\n  return (\n    <div>\n      <h2>Learn Meteor!!</h2>\n      <ul>{links.map(\n        link => <li key={link._id}>\n          <a href={link.url} target=\"_blank\">{link.title}</a>\n        </li>\n      )}</ul>\n    </div>\n  );\n};\n"
+        }
+    ]
+}

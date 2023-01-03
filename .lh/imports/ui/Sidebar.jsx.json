@@ -1,0 +1,66 @@
+{
+    "sourceFile": "imports/ui/Sidebar.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1672772272737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1672772354848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react';\n import { useTracker } from 'meteor/react-meteor-data';\n import { LinksCollection } from '../api/links';\n \n-export const Info = () => {\n+export const Sidebar = () => {\n   const links = useTracker(() => {\n     return LinksCollection.find().fetch();\n   });\n \n"
+                },
+                {
+                    "date": 1672772567121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,9 @@\n import { useTracker } from 'meteor/react-meteor-data';\n import { LinksCollection } from '../api/links';\n \n export const Sidebar = () => {\n-  const links = useTracker(() => {\n-    return LinksCollection.find().fetch();\n-  });\n-\n+  \n   return (\n     <div>\n       <template name=\"sidebar\">\n         <aside class=\"sidebar-left\">\n"
+                },
+                {
+                    "date": 1672772727770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n export const Sidebar = () => {\n   \n   return (\n     <div>\n+        <h2>Learn Meteor!!</h2>\n       <template name=\"sidebar\">\n         <aside class=\"sidebar-left\">\n             <img src=\"logo.png\" class=\"icon\" />\n         </aside>\n"
+                },
+                {
+                    "date": 1672772742552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n export const Sidebar = () => {\n   \n   return (\n     <div>\n-        <h2>Learn Meteor!!</h2>\n       <template name=\"sidebar\">\n         <aside class=\"sidebar-left\">\n             <img src=\"logo.png\" class=\"icon\" />\n         </aside>\n"
+                },
+                {
+                    "date": 1672773434364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n export const Sidebar = () => {\n   \n   return (\n     <div>\n-      <template name=\"sidebar\">\n-        <aside class=\"sidebar-left\">\n-            <img src=\"logo.png\" class=\"icon\" />\n-        </aside>\n-    </template>\n+      \n+      <aside class=\"sidebar-left\">\n+          <img src=\"logo.png\" class=\"icon\" />\n+      </aside>\n+  \n     </div>\n   );\n };\n"
+                },
+                {
+                    "date": 1672773751209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     <div>\n       \n       <aside class=\"sidebar-left\">\n           <img src=\"logo.png\" class=\"icon\" />\n+          <a class=\"company-logo\" href=\"#\"></a>\n       </aside>\n   \n     </div>\n   );\n"
+                },
+                {
+                    "date": 1672774160449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,17 @@\n   return (\n     <div>\n       \n       <aside class=\"sidebar-left\">\n-          <img src=\"logo.png\" class=\"icon\" />\n-          <a class=\"company-logo\" href=\"#\"></a>\n+        <img src=\"logo.png\" class=\"icon\" />\n+        <a class=\"company-logo\" href=\"#\">Fabrice</a>\n+        <div class=\"sidebar_links\">\n+          <a class=\"link-red\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-user\"></i>Profile</a>\n+          <a class=\"link-blue\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-comments-o\"></i>Profile</a>\n+          <a class=\"link-yellow\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-trophy\"></i>Profile</a>\n+          <a class=\"link-green\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-search\"></i>Profile</a>\n+        </div>\n+\n       </aside>\n   \n     </div>\n   );\n"
+                },
+                {
+                    "date": 1672774253135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n         <img src=\"logo.png\" class=\"icon\" />\n         <a class=\"company-logo\" href=\"#\">Fabrice</a>\n         <div class=\"sidebar_links\">\n           <a class=\"link-red\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-user\"></i>Profile</a>\n-          <a class=\"link-blue\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-comments-o\"></i>Profile</a>\n-          <a class=\"link-yellow\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-trophy\"></i>Profile</a>\n-          <a class=\"link-green\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-search\"></i>Profile</a>\n+          <a class=\"link-blue\" href=\"#\" id=\"jokes-link\"><i class=\"fa fa-comments-o\"></i>Profile</a>\n+          <a class=\"link-yellow\" href=\"#\" id=\"rankings-link\"><i class=\"fa fa-trophy\"></i>Profile</a>\n+          <a class=\"link-green\" href=\"#\" id=\"search-link\"><i class=\"fa fa-search\"></i>Profile</a>\n         </div>\n \n       </aside>\n   \n"
+                },
+                {
+                    "date": 1672775031240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n         <img src=\"logo.png\" class=\"icon\" />\n         <a class=\"company-logo\" href=\"#\">Fabrice</a>\n         <div class=\"sidebar_links\">\n           <a class=\"link-red\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-user\"></i>Profile</a>\n-          <a class=\"link-blue\" href=\"#\" id=\"jokes-link\"><i class=\"fa fa-comments-o\"></i>Profile</a>\n-          <a class=\"link-yellow\" href=\"#\" id=\"rankings-link\"><i class=\"fa fa-trophy\"></i>Profile</a>\n-          <a class=\"link-green\" href=\"#\" id=\"search-link\"><i class=\"fa fa-search\"></i>Profile</a>\n+          <a class=\"link-blue\" href=\"#\" id=\"jokes-link\"><i class=\"fa fa-comments-o\"></i>Comments</a>\n+          <a class=\"link-yellow\" href=\"#\" id=\"rankings-link\"><i class=\"fa fa-trophy\"></i>Trophy</a>\n+          <a class=\"link-green\" href=\"#\" id=\"search-link\"><i class=\"fa fa-search\"></i>Search</a>\n         </div>\n \n       </aside>\n   \n"
+                },
+                {
+                    "date": 1672775139694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\n       \n       <aside class=\"sidebar-left\">\n         <img src=\"logo.png\" class=\"icon\" />\n-        <a class=\"company-logo\" href=\"#\">Fabrice</a>\n+        <a class=\"company-logo\" href=\"#\">Fabrice sinarinzi</a>\n         <div class=\"sidebar_links\">\n           <a class=\"link-red\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-user\"></i>Profile</a>\n           <a class=\"link-blue\" href=\"#\" id=\"jokes-link\"><i class=\"fa fa-comments-o\"></i>Comments</a>\n           <a class=\"link-yellow\" href=\"#\" id=\"rankings-link\"><i class=\"fa fa-trophy\"></i>Trophy</a>\n"
+                },
+                {
+                    "date": 1672775148117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\n       \n       <aside class=\"sidebar-left\">\n         <img src=\"logo.png\" class=\"icon\" />\n-        <a class=\"company-logo\" href=\"#\">Fabrice sinarinzi</a>\n+        <a class=\"company-logo\" href=\"#\">Fabrice</a>\n         <div class=\"sidebar_links\">\n           <a class=\"link-red\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-user\"></i>Profile</a>\n           <a class=\"link-blue\" href=\"#\" id=\"jokes-link\"><i class=\"fa fa-comments-o\"></i>Comments</a>\n           <a class=\"link-yellow\" href=\"#\" id=\"rankings-link\"><i class=\"fa fa-trophy\"></i>Trophy</a>\n"
+                },
+                {
+                    "date": 1672775384248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       \n       <aside class=\"sidebar-left\">\n         <img src=\"logo.png\" class=\"icon\" />\n         <a class=\"company-logo\" href=\"#\">Fabrice</a>\n-        <div class=\"sidebar_links\">\n+        <div class=\"sidebar-links\">\n           <a class=\"link-red\" href=\"#\" id=\"profile-link\"><i class=\"fa fa-user\"></i>Profile</a>\n           <a class=\"link-blue\" href=\"#\" id=\"jokes-link\"><i class=\"fa fa-comments-o\"></i>Comments</a>\n           <a class=\"link-yellow\" href=\"#\" id=\"rankings-link\"><i class=\"fa fa-trophy\"></i>Trophy</a>\n           <a class=\"link-green\" href=\"#\" id=\"search-link\"><i class=\"fa fa-search\"></i>Search</a>\n"
+                }
+            ],
+            "date": 1672772272737,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport { useTracker } from 'meteor/react-meteor-data';\nimport { LinksCollection } from '../api/links';\n\nexport const Info = () => {\n  const links = useTracker(() => {\n    return LinksCollection.find().fetch();\n  });\n\n  return (\n    <div>\n      <template name=\"sidebar\">\n        <aside class=\"sidebar-left\">\n            <img src=\"logo.png\" class=\"icon\" />\n        </aside>\n    </template>\n    </div>\n  );\n};\n"
+        }
+    ]
+}

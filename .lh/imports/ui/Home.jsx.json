@@ -1,0 +1,54 @@
+{
+    "sourceFile": "imports/ui/Home.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1672779821874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1672780092126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,15 @@\n   return (\n     <div class=\"joke\">\n         \n         <div class=\"row\">\n+            <div class=\".col-sm-6 .col-md-5 .col-lg-6\" id=\"info\">\n+\t\t\t\t<h1 class=\"joke-title\">joke1</h1>\n+\t\t\t\t<p class=\"meta\">Author: user1</p>\n+\t\t\t\t<p class=\"meta\">Posted On: 01/03/2023</p>\n+\t\t\t</div>\n             \n         </div>\n-\n+        \n     </div>\n   );\n };\n"
+                },
+                {
+                    "date": 1672780136416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,13 @@\n \t\t\t\t<h1 class=\"joke-title\">joke1</h1>\n \t\t\t\t<p class=\"meta\">Author: user1</p>\n \t\t\t\t<p class=\"meta\">Posted On: 01/03/2023</p>\n \t\t\t</div>\n-            \n+            <div class=\".col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0\" id=\"vote\">\n+\t\t\t\t<img src=\"laugh.png\" class=\"smiley\" id=\"laugh\"/>\n+\t\t\t\t<img src=\"frown.png\" class=\"smiley\" id=\"frown\"/>\n+\t\t\t\t<img src=\"puke.png\" class=\"smiley\" id=\"puke\"/>\n+\t\t\t</div>\n         </div>\n         \n     </div>\n   );\n"
+                },
+                {
+                    "date": 1672780188611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,13 @@\n \t\t\t\t<img src=\"laugh.png\" class=\"smiley\" id=\"laugh\"/>\n \t\t\t\t<img src=\"frown.png\" class=\"smiley\" id=\"frown\"/>\n \t\t\t\t<img src=\"puke.png\" class=\"smiley\" id=\"puke\"/>\n \t\t\t</div>\n+            <div class=\"row\" id=\"score\">\n+\t\t\t\t<h3 class=\"count red block\">12</h3>\n+\t\t\t\t<h3 class=\"count yellow block\">8</h3>\n+\t\t\t\t<h3 class=\"count green block\">3</h3>\n+\t\t\t</div>\n         </div>\n         \n     </div>\n   );\n"
+                },
+                {
+                    "date": 1672780262200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,8 @@\n \t\t\t\t<h3 class=\"count yellow block\">8</h3>\n \t\t\t\t<h3 class=\"count green block\">3</h3>\n \t\t\t</div>\n         </div>\n-        \n+        <p class=\"regular joke-desc\">\"{{jokePost}}\"</p>\n     </div>\n   );\n };\n"
+                },
+                {
+                    "date": 1672780658139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,8 @@\n \t\t\t\t<h3 class=\"count yellow block\">8</h3>\n \t\t\t\t<h3 class=\"count green block\">3</h3>\n \t\t\t</div>\n         </div>\n-        <p class=\"regular joke-desc\">\"{{jokePost}}\"</p>\n+        <p class=\"regular joke-desc\">\"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.\"</p>\n     </div>\n   );\n };\n"
+                },
+                {
+                    "date": 1672780987682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,27 +4,32 @@\n \n export const Home = () => {\n   \n   return (\n-    <div class=\"joke\">\n+    <div>\n+        <div class=\"joke\">\n         \n-        <div class=\"row\">\n-            <div class=\".col-sm-6 .col-md-5 .col-lg-6\" id=\"info\">\n-\t\t\t\t<h1 class=\"joke-title\">joke1</h1>\n-\t\t\t\t<p class=\"meta\">Author: user1</p>\n-\t\t\t\t<p class=\"meta\">Posted On: 01/03/2023</p>\n-\t\t\t</div>\n-            <div class=\".col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0\" id=\"vote\">\n-\t\t\t\t<img src=\"laugh.png\" class=\"smiley\" id=\"laugh\"/>\n-\t\t\t\t<img src=\"frown.png\" class=\"smiley\" id=\"frown\"/>\n-\t\t\t\t<img src=\"puke.png\" class=\"smiley\" id=\"puke\"/>\n-\t\t\t</div>\n-            <div class=\"row\" id=\"score\">\n-\t\t\t\t<h3 class=\"count red block\">12</h3>\n-\t\t\t\t<h3 class=\"count yellow block\">8</h3>\n-\t\t\t\t<h3 class=\"count green block\">3</h3>\n-\t\t\t</div>\n+            <div class=\"row\">\n+                <div class=\".col-sm-6 .col-md-5 .col-lg-6\" id=\"info\">\n+                    <h1 class=\"joke-title\">joke1</h1>\n+                    <p class=\"meta\">Author: user1</p>\n+                    <p class=\"meta\">Posted On: 01/03/2023</p>\n+                </div>\n+                <div class=\".col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0\" id=\"vote\">\n+                    <img src=\"laugh.png\" class=\"smiley\" id=\"laugh\"/>\n+                    <img src=\"frown.png\" class=\"smiley\" id=\"frown\"/>\n+                    <img src=\"puke.png\" class=\"smiley\" id=\"puke\"/>\n+                </div>\n+                <div class=\"row\" id=\"score\">\n+                    <h3 class=\"count red block\">12</h3>\n+                    <h3 class=\"count yellow block\">8</h3>\n+                    <h3 class=\"count green block\">3</h3>\n+                </div>\n+            </div>\n+            <p class=\"regular joke-desc\">\n+                \"Why did the tomato turn red? Because it saw the salad dressing!\"\n+                </p>\n         </div>\n-        <p class=\"regular joke-desc\">\"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.\"</p>\n     </div>\n+    \n   );\n };\n"
+                },
+                {
+                    "date": 1672781030016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n                 </div>\n             </div>\n             <p class=\"regular joke-desc\">\n                 \"Why did the tomato turn red? Because it saw the salad dressing!\"\n-                </p>\n+            </p>\n         </div>\n     </div>\n     \n   );\n"
+                },
+                {
+                    "date": 1672781096298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,32 @@\n             <p class=\"regular joke-desc\">\n                 \"Why did the tomato turn red? Because it saw the salad dressing!\"\n             </p>\n         </div>\n+\n+        <div class=\"joke\">\n+        \n+            <div class=\"row\">\n+                <div class=\".col-sm-6 .col-md-5 .col-lg-6\" id=\"info\">\n+                    <h1 class=\"joke-title\">joke2</h1>\n+                    <p class=\"meta\">Author: user2</p>\n+                    <p class=\"meta\">Posted On: 01/03/2023</p>\n+                </div>\n+                <div class=\".col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0\" id=\"vote\">\n+                    <img src=\"laugh.png\" class=\"smiley\" id=\"laugh\"/>\n+                    <img src=\"frown.png\" class=\"smiley\" id=\"frown\"/>\n+                    <img src=\"puke.png\" class=\"smiley\" id=\"puke\"/>\n+                </div>\n+                <div class=\"row\" id=\"score\">\n+                    <h3 class=\"count red block\">12</h3>\n+                    <h3 class=\"count yellow block\">8</h3>\n+                    <h3 class=\"count green block\">3</h3>\n+                </div>\n+            </div>\n+            <p class=\"regular joke-desc\">\n+                \"Why couldn't the clown make any friends? Because he was always clowning around.\"\n+            </p>\n+        </div>\n     </div>\n     \n   );\n };\n"
+                },
+                {
+                    "date": 1672781113056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,32 @@\n             <p class=\"regular joke-desc\">\n                 \"Why couldn't the clown make any friends? Because he was always clowning around.\"\n             </p>\n         </div>\n+\n+        <div class=\"joke\">\n+        \n+        <div class=\"row\">\n+            <div class=\".col-sm-6 .col-md-5 .col-lg-6\" id=\"info\">\n+                <h1 class=\"joke-title\">joke2</h1>\n+                <p class=\"meta\">Author: user2</p>\n+                <p class=\"meta\">Posted On: 01/03/2023</p>\n+            </div>\n+            <div class=\".col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0\" id=\"vote\">\n+                <img src=\"laugh.png\" class=\"smiley\" id=\"laugh\"/>\n+                <img src=\"frown.png\" class=\"smiley\" id=\"frown\"/>\n+                <img src=\"puke.png\" class=\"smiley\" id=\"puke\"/>\n+            </div>\n+            <div class=\"row\" id=\"score\">\n+                <h3 class=\"count red block\">12</h3>\n+                <h3 class=\"count yellow block\">8</h3>\n+                <h3 class=\"count green block\">3</h3>\n+            </div>\n+        </div>\n+        <p class=\"regular joke-desc\">\n+            \"Why couldn't the clown make any friends? Because he was always clowning around.\"\n+        </p>\n     </div>\n+    </div>\n     \n   );\n };\n"
+                }
+            ],
+            "date": 1672779821874,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport { useTracker } from 'meteor/react-meteor-data';\nimport { LinksCollection } from '../api/links';\n\nexport const Home = () => {\n  \n  return (\n    <div class=\"joke\">\n        \n        <div class=\"row\">\n            \n        </div>\n\n    </div>\n  );\n};\n"
+        }
+    ]
+}
